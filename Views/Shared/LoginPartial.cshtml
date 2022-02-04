@@ -1,0 +1,18 @@
+@model SimpleLoginRegistration.Models.LogUser
+
+<div class="container">
+    <h1>Login</h1>
+    <form asp-action="Login" asp-controller="User" method="post">
+        <div class="form-group">
+            <label asp-for="LEmail" class="form-control"></label>
+            <input asp-for="LEmail" class="form-control">
+            <span asp-validation-for="LEmail"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="LPassword" class="form-control"></label>
+            <input asp-for="LPassword" class="form-control">
+            <span asp-validation-for="LPassword"></span>
+        </div>
+        <button type="submit" class="btn-primary">Login</button>
+    </form>
+</div>
